@@ -60,4 +60,19 @@ public class WorkShould {
         assertTrue(work.isDone());
     }
 
+    @Test
+    public void calculate_prices_correctly_based_on_decorators() {
+        Work work = new TyresChangeDecorator(new OilChangeDecorator(
+                        new CheckWork("", 0).setTakenHours(1)));
+        assertEquals(70, work.getPrice(), 0.0001);
+    }
+
+    @Test
+    public void get_description_of_decorators() {
+        Work work = new TyresChangeDecorator(new OilChangeDecorator(
+                new CheckWork("Check work", 0).setTakenHours(1)));
+        String expected = "Check work, oil change , tyres change ";
+        assertEquals(expected, work.getDescription());
+    }
+
 }
