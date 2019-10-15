@@ -1,0 +1,6 @@
+FixWork{Price=0.0, Desc=a}
+FixWork{Price=0.0, Desc=b}
+FixWork{Price=0.0, Desc=d}
+FixWork{Price=0.0, Desc=f}
+FixWork{Price=0.0, Desc=w}
+FixWork{Price=0.0, Desc=z}

@@ -28,6 +28,7 @@ public class FixWork extends Work{
     public String toString() {
         return "FixWork{" +
                 "Price=" + this.getPrice() +
+                ", Desc=" + super.getDescription() +
                 '}';
     }
 }
